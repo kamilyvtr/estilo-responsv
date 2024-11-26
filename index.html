@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   <link rel="stylesheet" href="impressora.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    background-color:  #333333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+menu li {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background-color: #b21f2d;
+    border-radius: 5px;
+    color: #fff;
+}
+
+menu li:hover {
+    background-color: #f79c9c;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #005f73;
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+} 
+article img {
+    width: 100%;
+    max-width: 900px; 
+    height: auto; 
+    display: block;
+    margin: 10px auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    menu li {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 0.9rem;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esporte</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Esporte</h2>
+            <p>O Flamengo tem se destacado na temporada com atuações memoráveis e uma crescente paixão da torcida. A equipe busca consolidar-se como uma das principais forças do futebol brasileiro, conquistando títulos nacionais e mantendo o foco nas competições internacionais. O elenco, repleto de estrelas, continua trabalhando duro sob o comando do técnico, que tem implementado táticas inovadoras para garantir a vitória em todos os jogos.</p>
+            <img src="filipe_luis2-255824.webp" alt="Time do Flamengo em campo">
+            <p>O Flamengo conquista mais uma vitória no campeonato brasileiro, superando seus adversários com uma atuação impecável. O técnico destacou a importância do trabalho em equipe e a torcida foi à loucura com os gols de Pedro e Bruno Henrique. O próximo jogo promete ainda mais emoção, já que o time enfrentará o seu maior rival no clássico do fim de semana.</p>
+        </article>
+
+        <article>
+            <h2>Política</h2>
+            <p>O cenário político no Brasil está em constante evolução. Novas propostas têm movimentado o Congresso Nacional, e debates acalorados sobre temas como reforma tributária, educação e saúde têm dominado a pauta. Os eleitores estão mais atentos e exigentes, cobrando mais transparência e eficiência dos representantes eleitos. A pressão popular por mudanças concretas segue sendo um fator determinante na condução das decisões políticas.</p>
+            <img src="trinunal.jpg" alt="Política em debate no parlamento">
+            <p>O cenário político do Brasil está aquecido com a recente votação da reforma tributária. Deputados e senadores discutem intensamente as propostas, que visam simplificar o sistema fiscal do país. A população está atenta, esperando por mudanças que possam trazer mais justiça e eficiência na arrecadação de impostos.</p>
+        </article>
+
+        <article>
+            <h2>Tecnologia</h2>
+            <p>A tecnologia segue sendo um dos pilares do desenvolvimento global. Inovações como inteligência artificial, computação em nuvem e internet das coisas continuam transformando a forma como as pessoas vivem e trabalham. O Brasil, em particular, tem investido em startups tecnológicas, buscando soluções para problemas locais e globais. Esse cenário oferece novas oportunidades para empreendedores e desenvolvedores.</p>
+            <img src="pexels-kevin-ku-92347-577585.jpg" alt="Tecnologia moderna representada por um robô">
+            <p>Avanços em inteligência artificial continuam a transformar o mundo. Recentemente, uma startup brasileira desenvolveu um assistente virtual capaz de diagnosticar doenças em segundos. Essa inovação promete revolucionar o setor de saúde, tornando-o mais acessível e eficiente para todos.</p> 
+        </article>
+    </main> 
+    <footer>
+        <p>Desenvolvido por Kamily Vitória</p>
+    </footer>
+</body>
+</html>
